@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tic Tac Toe Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+
+    <h1>Tic Tac Toe</h1>
+    <h2>Scores: X:<span id="x_score" class="score">0</span>, O:<span id="o_score" class="score">0</span></h2>
+    <h2>Its your turn, <span class="display_player">X</span>.</h2>
+
+    <div class="game_board">
+      <div class='row'>
+        <div onclick="pickSquare(0)" class="one"><span class="xo"></span></div>
+        <div onclick="pickSquare(1)" class="two"><span class="xo"></span></div>
+        <div onclick="pickSquare(2)" class="three"><span class="xo"></span></div>
+      </div>
+      <div class='row'>
+        <div onclick="pickSquare(3)" class="four"><span class="xo"></span></div>
+        <div onclick="pickSquare(4)" class="five"><span class="xo"></span></div>
+        <div onclick="pickSquare(5)" class="six"><span class="xo"></span></div>
+      </div>
+      <div class='row'>
+        <div onclick="pickSquare(6)" class="seven"><span class="xo"></span></div>
+        <div onclick="pickSquare(7)" class="eight"><span class="xo"></span></div>
+        <div onclick="pickSquare(8)" class="nine"><span class="xo"></span></div>
+      </div>
+    </div>
+
+    <button class="new_game">New Game</button>
+    <button onclick="againstAi = true" id="ai_opponent" class="reset">Reset Game vs AI</button>
+    <button onclick="againstAi = false" id="human_opponent" class="reset">Reset</button>
+  </body>
+
+
+</html>
